@@ -15,7 +15,7 @@ const sr = ScrollReveal({
   reset: true,
 });
 
-sr.reveal(`.animate`, {
+sr.reveal(`.animat`, {
   interval: 200,
 });
 

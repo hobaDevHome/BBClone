@@ -24,21 +24,51 @@
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Evolvice</title>
+    <title>Bath and Body works main page clone</title>
   </head>
 
   <body>
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
-      <i class="bx bx-chevron-up scrolltop__icon"></i>
+      <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
     </a>
-    <!-- ============== hero =============== -->
+    <!-- ============== welcome row =============== -->
+    <div class="welcome">
+      <div class="row1">
+        <div class="welcome-links">
+          <ul>
+            <li>Welcome, Heba Abdallah</li>
+            <li><a href="#">my account</a></li>
+            <li><a href="#">sing out</a></li>
+            <li><a href="#">find store</a></li>
+            <li><a href="#">العربية</a></li>
+          </ul>
+        </div>
+        <div class="shop">
+          <p>Shop By Fragrance</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============== title row =============== -->
+    <div class="title">
+      <form action="">
+        <input type="text" placeholder="Search" />
+        <i class="bx bx-search"></i>
+      </form>
+      <h1>Bath&Body Works</h1>
+      <div class="cart">
+        <h5>EGP 1.185</h5>
+        <div class="carticon">
+          <i class="bx bxs-shopping-bag-alt"></i>
+          <div class="badg">7</div>
+        </div>
+      </div>
+    </div>
+    <!-- ============== nav bar =============== -->
     <div class="hero">
       <header id="home">
         <nav>
-          <div id="logo">
-            <img src="./images/logo_wht.png" alt="" />
-          </div>
           <ul id="men">
             <li>
               <a class="link button_slide slide_right" href="#Services"
@@ -72,351 +102,92 @@
           <box-icon name="menu" color="whitesmoke" id="menu"></box-icon>
         </nav>
       </header>
-      <div class="hero-content">
-        <h1>Software developers <span class="light"> and</span></h1>
-        <h1>individual software</h1>
-        <h1>
-          development<span class="light"> from </span
-          ><span class="bold">Ukraine</span><span class="light"> and</span
-          ><span class="bold"> Egypt</span>
-        </h1>
-        <div class="pars">
-          <p>
-            We develop custom software solutions to improve your business
-            processes or to realize your product idea.
-          </p>
-          <p>
-            On our nearshore locations in Ukraine and Egypt, we provide IT
-            specialists and engineers to optimally expand your In-House team.
-          </p>
-        </div>
-        <div class="btons">
-          <div class="bton bton1">i want to expand my team</div>
-          <div class="bton bton2">i need a ready made solution</div>
-        </div>
-      </div>
     </div>
+
+    <!-- ============== shop row =============== -->
+    <!-- ============== 850 offer row =============== -->
+    <!-- ============== mix and match offer row =============== -->
+    <!-- ============== opetions blocks =============== -->
+    <!-- ============== products slider =============== -->
+    <!-- ============== gifts img =============== -->
+    <!-- ============== candles img =============== -->
+    <!-- ============== QR img =============== -->
+    <!-- ============== slogan block =============== -->
     <!-- ============== stats =============== -->
-    <div class="stats" id="stats">
-      <div class="stat">
-        <i class="bx bx-folder animate"></i>
-        <h4 class="animate">projects</h4>
-        <p class="animate">+350</p>
-      </div>
-      <div class="stat">
-        <i class="bx bxs-face animate"></i>
-        <h4 class="animate">Employees</h4>
-        <p class="animate">+50</p>
-      </div>
-      <div class="stat">
-        <i class="bx bx-pin animate"></i>
-        <h4 class="animate">Locations</h4>
-        <p class="animate">Stuttgart, Kyiv, Cairo</p>
-      </div>
-      <div class="stat">
-        <i class="bx bx-home animate"></i>
-        <h4 class="animate">Established</h4>
-        <p class="animate">2012</p>
-      </div>
-    </div>
-    <!-- ============== experts =============== -->
-    <div class="experts" id="Services">
-      <div class="exp-data">
-        <h2 class="animate">Nearshore Software Development Specialists</h2>
-        <h3 class="animate">Evolvice</h3>
-        <h1 class="animate">Experts</h1>
-        <p class="animate">
-          We support you with IT specialists and engineers, whether you want to
-          build a new team or expand an existing one.
-        </p>
-        <p class="animate">
-          Our nearshore specialists work from our locations in Ukraine and
-          Egypt, communicating directly with you. This creates a powerful unity
-          with your internal team.
-        </p>
-        <div class="vacancies animate">
-          <h3>our experts</h3>
-          <div class="icon">
-            <i class="bx bx-male"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ============== solutions =============== -->
-    <div class="experts sol" id="Aboutus">
-      <div class="exp-data sol-data">
-        <h2 class="right animate">Nearshore Software Solutions</h2>
-        <h3 class="right animate">Evolvice</h3>
-        <h1 class="right animate">Development</h1>
-        <p class="right animate">
-          For you we develop customized solutions that completely improve your
-          internal processes.
-        </p>
-        <p class="right animate">
-          You entrust us with the software development – we provide you with a
-          complete solution according to your needs.
-        </p>
-        <div class="vac-right animate">
-          <div class="vacancies">
-            <h3 class="right">solutions</h3>
-            <div class="icon">
-              <i class="bx bx-planet"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- ============== locations =============== -->
-    <div class="locations" id="Language">
-      <div class="locations-div">
-        <div class="col-left">
-          <h1 class="animate">
-            <sapn class="our">Our </sapn>Nearshore Locations
-          </h1>
-          <p class="animate">
-            Have you ever heard from Ukraine and Egypt? The most attractive
-            nearshore destinations for IT sourcing and software development.
-          </p>
-          <img class="animate" src="./images/mapEvoEn.jpg" alt="" />
-        </div>
-        <div class="col-right">
-          <div class="empty"></div>
-          <!-- ============ ukrain =========== -->
-          <div class="country">
-            <div class="flag animate">
-              <img src="./images//Ukraine@2x-100-300x300.jpg" alt="" />
-            </div>
-            <div class="coutry-data animate">
-              <h3>Ukraine</h3>
-              <p>
-                An excellent alternative to Eastern European countries like
-                Poland and Romania.
-              </p>
-              <p>
-                You will find a qualified workforce with high educational level
-                and very good English skills at our Ukrainian locations in Kyiv
-                and Uzhgorod.
-              </p>
-              <div class="read-div">
-                <h4>read more about ukrain</h4>
-                <i class="bx bx-right-arrow-circle"></i>
-              </div>
-            </div>
-          </div>
-
-          <!-- ============ egypt =========== -->
-          <div class="country">
-            <div class="flag animate">
-              <img src="./images//Egypt@2x-100.jpg" alt="" />
-            </div>
-            <div class="coutry-data">
-              <h3>Egypt</h3>
-              <p>
-                A real insider tip for the IT and software industry. In
-                particular, Cairo is one of the fastest-growing offshore and
-                nearshore regions in the world.
-              </p>
-              <p>
-                There are great opportunities here for European companies to
-                take advantage of the Egyptian market for very good IT
-                specialists and service providers.
-              </p>
-              <div class="read-div">
-                <h4>read more about Egypt</h4>
-                <i class="bx bx-right-arrow-circle"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ============== refernce =============== -->
-    <div class="references" id="BLog">
-      <h1>References</h1>
-
-      <div class="slider">
-        <div class="slide-track">
-          <!-- ---- one --- -->
-          <div class="slid">
-            <img src="./images/hallesche-logo.png" alt="" />
-          </div>
-
-          <div class="slid">
-            <img src="./images/porsche-logo.png" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/ritter-1.png" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/satelligence.jpg" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/sig-logo.png" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/teamwerk-logo.png" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/wts-logo.png" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/Adidas-180x80.png" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/akka-3.png" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/dhl-logo.png" alt="" />
-          </div>
-          <!-- ---- two --- -->
-          <div class="slid">
-            <img src="./images/hallesche-logo.png" alt="" />
-          </div>
-
-          <div class="slid">
-            <img src="./images/porsche-logo.png" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/ritter-1.png" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/satelligence.jpg" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/sig-logo.png" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/teamwerk-logo.png" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/wts-logo.png" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/Adidas-180x80.png" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/akka-3.png" alt="" />
-          </div>
-          <div class="slid">
-            <img src="./images/dhl-logo.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ============== careers =============== -->
-    <div class="careers" id="Careers">
-      <div class="image"></div>
-      <div class="working animate">
-        <p>Working at<span> Evolvice</span></p>
-        <p>Do you want to realize your ideas? We give you a chance.</p>
-        <p>
-          You like new challenges and prefer to work in an agile, international
-          environment? Then become part of our professional team.
-        </p>
-        <div class="vacancies">
-          <h3>our vacancies</h3>
-          <div class="icon">
-            <i class="bx bxs-contact"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ============== send =============== -->
-    <div class="send">
-      <div class="we animate">
-        <p>We would love to <span>hear from you</span></p>
-        <h4>
-          We know our customers and their needs, working in partenership on
-          viable solutions.
-        </h4>
-      </div>
-      <div class="you animate">
-        <div class="time">
-          <p>it's time for your projects</p>
-        </div>
-        <div class="tel">
-          <i class="bx bxs-phone"></i>
-        </div>
-      </div>
-    </div>
     <!-- ============== footer =============== -->
     <div class="footer" id="Contact">
-      <div class="hh animate">
-        <img src="./images/logo_wht.png" alt="" />
-        <p>Evolvice GmbH</p>
-        <p>DE-70499 Stuttgart</p>
-        <p><i class="bx bxs-phone"></i> +49 711 219 559 0</p>
-        <p>
-          <i class="bx bx-mail-send"></i>
-          <a href="#"> info@evolvice.de</a>
-        </p>
-        <div class="socail">
-          <div class="socail-link">
-            <box-icon
-              color="white"
-              size="sm"
-              name="facebook"
-              type="logo"
-            ></box-icon>
-          </div>
-          <div class="socail-link">
-            <box-icon
-              size="sm"
-              color="white"
-              name="twitter"
-              type="logo"
-            ></box-icon>
-          </div>
-          <div class="socail-link">
-            <box-icon
-              size="sm"
-              color="white"
-              name="linkedin"
-              type="logo"
-            ></box-icon>
-          </div>
-          <div class="socail-link">
-            <box-icon
-              size="sm"
-              color="white"
-              name="instagram"
-              type="logo"
-            ></box-icon>
-          </div>
-        </div>
-      </div>
-      <div class="loc animate">
-        <h2>Our Nearshore Locations</h2>
-        <p><span>England</span> – London</p>
-        <p><span>Egypt</span> – Cairo</p>
-      </div>
-      <div class="footer-lins animate">
-        <h2>Links</h2>
+      <div class="footer-col">
+        <h4>shop by</h4>
         <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Imprint</a></li>
-          <li><a href="#">Cookie Policy (EU)</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#">BODY CARE</a></li>
+          <li><a href="#">HANDS, SOAPS & SANIRIZERS</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">FRAGRANCE</a></li>
+          <li><a href="#">GIFTS</a></li>
+          <li><a href="#">TOP OFFERS</a></li>
         </ul>
       </div>
-      <div class="footer-blog animate">
-        <h2>Blog</h2>
-        <p class="p1">Work from home. A blessing or a curse?</p>
-        <p class="p2">
-          10 reasons why you should hire Ukrainian CAD engineers for your team
-        </p>
-        <p class="p3">
-          Evolvice Wins Clutch Leader Awards as a Top Web Developer in Germany
-        </p>
+      <div class="footer-col">
+        <h4>dicover</h4>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Delivery & information</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Website Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>customer care</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Sotre Locator</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>connect with us</h4>
+
+        <div class="socail-links">
+          <div class="socail-link">
+            <a href="#"><img src="./images/facebook.png" alt="" /></a>
+          </div>
+          <div class="socail-link">
+            <a href="#"><img src="./images/twitter.png" alt="" /></a>
+          </div>
+          <div class="socail-link">
+            <a href="#"><img src="./images/instagram.png" alt="" /></a>
+          </div>
+          <div class="socail-link">
+            <a href="#"><img src="./images/youtube.png" alt="" /></a>
+          </div>
+        </div>
+        <p>Get email offers and the latest news from Bath & Body Works</p>
+        <div class="singup">
+          <input type="text" placeholder="Enter your email address" />
+          <div class="singup-button">sing up</div>
+        </div>
+        <div class="langs">
+          <a href="#" class="en">English | </a>
+          <a href="#" class="ar">العربية</a>
+        </div>
+        <div class="hap">
+          <a href="#"><img src="./images/happiness-.png" alt="" /></a>
+        </div>
       </div>
     </div>
     <!-- ============== signature =============== -->
     <div class="signature">
-      <p class="animate">Evolvice GmbH © 2021</p>
+      <div class="cards-logos">
+        <img src="./images/visa.jpg" alt="" />
+        <img src="./images/master.jpg" alt="" />
+      </div>
+      <div class="slogan">© Bath & Body Works. All Rights Reserved</div>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
