@@ -365,9 +365,14 @@ img {
   height: 300px;
   position: relative;
   margin: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .slider::-webkit-scrollbar {
+  display: none;
+}
+.slider .slide::-webkit-scrollbar {
   display: none;
 }
 
