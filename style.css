@@ -365,8 +365,6 @@ img {
   height: 300px;
   position: relative;
   margin: auto;
-  overflow-x: scroll;
-  overflow-y: hidden;
 }
 
 .slider::-webkit-scrollbar {
@@ -378,6 +376,8 @@ img {
   position: absolute;
   left: 0;
   transition: 0.3s left ease-in-out;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .slider .item {
