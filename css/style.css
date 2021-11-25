@@ -123,40 +123,8 @@ img {
   font-style: italic;
 }
 /* ======================================================
-========================hiddedn form ==================== */
-.hidden-form {
-  width: 90%;
-  border: 1px solid gainsboro;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-  margin: 5px auto;
-  display: none;
-}
-
-.hidden-form input {
-  width: 9%;
-  margin-right: 5px;
-  border: none;
-  padding: 0 10px;
-}
-.hidden-form input::placeholder {
-  font-size: 12px;
-}
-.hidden-form i {
-  font-size: 20px;
-  color: var(--mainBlue);
-}
-.show-form {
-  display: block;
-}
-/* ======================================================
 ====================================================== */
 /* <!-- ============== title row =============== --> */
-.title-menu {
-  display: none;
-}
 .title {
   max-width: var(--maxwidth);
   margin: 0 auto;
@@ -174,7 +142,6 @@ img {
   justify-content: space-between;
   padding: 5px;
 }
-
 .title form input {
   width: 100%;
   margin-right: 5px;
@@ -247,10 +214,8 @@ img {
 #menu {
   position: absolute;
   top: 20px;
-  left: 20px;
+  right: 20px;
   display: none;
-  z-index: 10;
-  color: var(--textGrey);
 }
 .showmenu #men {
   left: 10%;
@@ -353,73 +318,59 @@ img {
 /* <!-- ============== products slider =============== --> */
 .products-carousel {
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 30px auto;
+  position: relative;
 }
 .products-carousel h3 {
   text-align: center;
   color: var(--textGrey);
   margin-bottom: 30px;
 }
-.slider {
-  width: 100%;
-  height: 300px;
-  position: relative;
-  margin: auto;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-
-.slider::-webkit-scrollbar {
-  display: none;
-}
-
-.slider .slide {
-  display: flex;
+.products-carousel span {
   position: absolute;
-  left: 0;
-  transition: 0.3s left ease-in-out;
+  top: 40%;
+  font-size: 60px;
+  color: black;
+  cursor: pointer;
+  left: 0.5%;
+  z-index: 1;
 }
-
-.slider .item {
-  margin-right: 10px;
-  max-width: 200px;
-  margin-left: 30px;
+.products-carousel span:nth-of-type(2) {
+  left: 98%;
+  text-align: right;
+}
+.products-carousel section {
+  width: 98%;
+  height: 300px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: start;
+  overflow-x: auto;
+}
+.products-carousel section::-webkit-scrollbar {
+  visibility: hidden;
+}
+.pro {
+  min-width: 220px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  color: var(--textGrey);
+  font-size: 12px;
+  padding: 10px;
+  margin-left: 10px;
+  transform: all 0.5s;
+}
+.pro h4 {
+  color: var(--textGrey);
+  font-size: 12px;
 }
 img.item {
-  width: 100%;
+  width: 70%;
   height: auto;
   object-fit: cover;
 }
 
-.slider .item:last-child {
-  margin-right: 0;
-}
-
-.ctrl {
-  text-align: center;
-  margin-top: 5px;
-}
-
-.ctrl-btn {
-  min-width: 50px;
-  border: none;
-  font-weight: 600;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  position: absolute;
-  top: 50%;
-  margin-top: -18px;
-  font-size: 40px;
-}
-
-.ctrl-btn.pro-prev {
-  left: 0;
-}
-
-.ctrl-btn.pro-next {
-  right: 0;
-}
 /* ======================================================
 ====================================================== */
 /* <!-- ============== slogan block =============== --> */
@@ -569,12 +520,9 @@ img.item {
   height: auto;
   margin-right: 20px;
 }
-.copyrights {
+.slogan {
   font-size: 10px;
   margin-right: 15px;
-
-  display: flex;
-  justify-content: end;
 }
 
 /* ======================================================
@@ -582,54 +530,155 @@ img.item {
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
-  /* ======================================================
-  ====================== welcome ======================== */
-
-  .welcome {
-    display: none;
+  .hh,
+  .loc,
+  .footer-blog,
+  .footer-lins {
+    justify-items: center;
+    justify-self: center;
+    text-align: center;
+    border-left: none;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 10px;
   }
 
-  /* ======================================================
-  ====================== title row ======================== */
-  .title form {
-    display: none;
+  .send {
+    justify-items: center;
+    justify-self: center;
   }
-  .title-menu {
-    display: block;
-    flex-basis: 25%;
-  }
-  .hidden-form {
-    display: block;
-  }
-  /* ======================================================
-  ====================== shop now ======================== */
-  .shop-now ul {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* ======================================================
-  ====================== offer pic ======================== */
-  .imga-mix {
-    content: url("./images/mix-mob.jpg");
-    padding: 10px;
-  }
-
-  /* ======================================================
-    ====================== slider ======================== */
-  .slider {
+  .we,
+  .you {
     width: 95%;
-    height: 200px;
   }
-  .slider .item {
-    margin-right: 10px;
-    max-width: 150px;
-    margin-left: 30px;
+  .we h4 {
+    font-size: 12px;
   }
-  /* ======================================================
-    ====================== navbar ======================== */
+  .we p {
+    font-size: 20px;
+  }
+  .we p span {
+    font-size: 22px;
+  }
+  .you {
+    width: 250px;
+    margin-left: 10px;
+    justify-self: left;
+  }
+  .you p {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .you .time {
+    width: 90%;
+    padding: 0 10px;
+    border-right: 2px solid white;
+    padding-top: 5px;
+  }
+  .you .tel {
+    padding: 0px 10px;
+    align-self: center;
+  }
+  .you .tel i {
+    font-size: 15px;
+  }
+  .careers {
+    flex-direction: column;
+  }
+  .image {
+    display: none;
+  }
+  .locations-div {
+    width: 90%;
+    flex-direction: column;
+  }
+  .col-left h1 {
+    font-size: 25px;
+  }
+  .country {
+    flex-direction: column;
+  }
+  .flag {
+    align-self: flex-start;
+    width: 200px;
+  }
+  .coutry-data h3 {
+    font-size: 18px;
+  }
+  .coutry-data p {
+    font-size: 12px;
+  }
+  .read-div {
+    width: 70%;
+  }
 
+  .read-div i {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  .read-div h4 {
+    padding: 5px 10px;
+  }
+  /* experts */
+  .experts {
+    background-image: none;
+    background-attachment: fixed;
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .exp-data {
+    margin-left: 10px;
+    width: 90%;
+  }
+  .sol {
+    background: var(--signature);
+  }
+  .exp-data.sol-data {
+    padding-right: 20px;
+  }
+  /* ================ */
+  /* ================ */
+  /* ================ */
+  .hero {
+    height: 100%;
+    width: 100%;
+  }
+  .hero-content {
+    margin: 0px auto;
+    width: 80%;
+    margin-top: 50px;
+  }
+  .pars p {
+    font-size: 14px;
+  }
+  .btons {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .bton {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .bton1 {
+    color: #d1d646;
+    border: 2px solid #d1d646;
+  }
+  .bton1:hover {
+    background-color: #d1d646;
+    color: white;
+  }
+  .bton2 {
+    color: white;
+    border: 2px solid #5e4ae3;
+  }
+  .bton2:hover {
+    background-color: #5e4ae3;
+  }
+
+  /* =========================== */
+  /* =========================== */
+  /* =========================== */
   #menu {
     display: block;
   }
@@ -643,20 +692,17 @@ img.item {
     flex-direction: column;
   }
   #men {
-    background-color: white;
-    color: var(--textGrey);
+    background-color: rgba(61, 59, 59, 0.9);
     width: 80%;
-    margin-top: 0;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
     align-items: center;
     position: absolute;
     border-radius: 10px;
-    top: -70px;
+    top: 20px;
     left: -100%;
-    transition: all 0.5s;
-    padding-bottom: 20px;
   }
   #men li {
     display: inline-block;

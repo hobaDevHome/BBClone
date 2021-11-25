@@ -24,7 +24,7 @@
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Bath and Body works main page clone</title>
   </head>
 
@@ -53,9 +53,6 @@
 
     <!-- ============== title row =============== -->
     <div class="title">
-      <div class="title-menu">
-        <box-icon name="menu" color="grey" id="menu"></box-icon>
-      </div>
       <form action="">
         <input type="text" placeholder="Search" />
         <i class="bx bx-search"></i>
@@ -69,11 +66,6 @@
         </div>
       </div>
     </div>
-    <!-- ============== hidden form =============== -->
-    <form class="hidden-form" id="hidden-form">
-      <i class="bx bx-search"></i>
-      <input type="text" placeholder="Search" />
-    </form>
     <!-- ============== nav bar =============== -->
     <div class="hero">
       <header id="home">
@@ -98,6 +90,7 @@
               <a class="link" href="#Language">Top Offers</a>
             </li>
           </ul>
+          <box-icon name="menu" color="whitesmoke" id="menu"></box-icon>
         </nav>
       </header>
     </div>
@@ -115,8 +108,8 @@
       <img src="./images/shop.jpg" alt="" />
     </div>
     <!-- ============== mix and match offer row =============== -->
-    <div class="fullscreen-img offer">
-      <img class="imga-mix" src="./images/offer.jpg" alt="" />
+    <div class="fullscreen-img">
+      <img src="./images/offer.jpg" alt="" />
     </div>
 
     <!-- ============== opetions blocks =============== -->
@@ -143,28 +136,75 @@
     <!-- ============== products slider =============== -->
     <div class="products-carousel">
       <h3>MOST WANTED</h3>
-      <div class="slider" id="slider">
-        <div class="slide" id="slide">
+      <span class="slider-btn">
+        <i class="bx bx-chevron-left"></i>
+      </span>
+      <span class="slider-btn">
+        <i class="bx bx-chevron-right"></i>
+      </span>
+
+      <section>
+        <div class="pro">
           <img class="item" src="./images/pro1.jpg" />
-          <img class="item" src="./images/pro2.jpg" />
-          <img class="item" src="./images/pro3.jpg" />
-          <img class="item" src="./images/pro4.jpg" />
-          <img class="item" src="./images/pro5.jpg" />
-          <img class="item" src="./images/pro6.jpg" />
-          <img class="item" src="./images/pro7.jpg" />
-          <img class="item" src="./images/pro8.jpg" />
-          <img class="item" src="./images/pro9.jpg" />
-          <img class="item" src="./images/pro10.jpg" />
-          <img class="item" src="./images/pro11.jpg" />
-          <img class="item" src="./images/pro12.jpg" />
+          <h4>Fragrance Fragrance Fragrance</h4>
+          <h4>EGB 450</h4>
         </div>
-        <div class="ctrl-btn pro-next">
-          <i class="bx bx-chevron-right"></i>
+        <div class="pro">
+          <img class="item" src="./images/pro1.jpg" />
+          <h4>Fragrance</h4>
+          <h4>EGB 450</h4>
         </div>
-        <div class="ctrl-btn pro-prev">
-          <i class="bx bx-chevron-left"></i>
+        <div class="pro">
+          <img class="item" src="./images/pro1.jpg" />
+          <h4>Fragrance</h4>
+          <h4>EGB 450</h4>
         </div>
-      </div>
+        <div class="pro">
+          <img class="item" src="./images/pro1.jpg" />
+          <h4>Fragrance</h4>
+          <h4>EGB 450</h4>
+        </div>
+        <div class="pro">
+          <img class="item" src="./images/pro1.jpg" />
+          <h4>Fragrance</h4>
+          <h4>EGB 450</h4>
+        </div>
+        <div class="pro">
+          <img class="item" src="./images/pro1.jpg" />
+          <h4>Fragrance</h4>
+          <h4>EGB 450</h4>
+        </div>
+        <div class="pro">
+          <img class="item" src="./images/pro1.jpg" />
+          <h4>Fragrance</h4>
+          <h4>EGB 450</h4>
+        </div>
+        <div class="pro">
+          <img class="item" src="./images/pro1.jpg" />
+          <h4>Fragrance</h4>
+          <h4>EGB 450</h4>
+        </div>
+        <div class="pro">
+          <img class="item" src="./images/pro1.jpg" />
+          <h4>Fragrance</h4>
+          <h4>EGB 450</h4>
+        </div>
+        <div class="pro">
+          <img class="item" src="./images/pro1.jpg" />
+          <h4>Fragrance</h4>
+          <h4>EGB 450</h4>
+        </div>
+        <div class="pro">
+          <img class="item" src="./images/pro1.jpg" />
+          <h4>Fragrance</h4>
+          <h4>EGB 450</h4>
+        </div>
+        <div class="pro">
+          <img class="item" src="./images/pro1.jpg" />
+          <h4>Fragrance</h4>
+          <h4>EGB 450</h4>
+        </div>
+      </section>
     </div>
 
     <!-- ============== gifts img =============== -->
@@ -264,7 +304,7 @@
         <img src="./images/visa.jpg" alt="" />
         <img src="./images/master.jpg" alt="" />
       </div>
-      <div class="copyrights">© Bath & Body Works. All Rights Reserved</div>
+      <div class="slogan">© Bath & Body Works. All Rights Reserved</div>
     </div>
 
     <script
@@ -277,5 +317,56 @@
 
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
     <script src="app.js"></script>
+    <script>
+      var span = document.querySelectorAll(".slider-btn");
+      var div = document.querySelectorAll(".pro");
+      var l = 0;
+      span[1].addEventListener("click", () => {
+        l++;
+        for (var i of div) {
+          if (l == 0) {
+            i.style.left = "0px";
+          }
+          if (l == 1) {
+            i.style.left = "-740px";
+          }
+          if (l == 2) {
+            i.style.left = "-1480px";
+          }
+          if (l == 3) {
+            i.style.left = "-2220px";
+          }
+          if (l == 4) {
+            i.style.left = "-2960px";
+          }
+          if (l > 4) {
+            l = 4;
+          }
+        }
+      });
+      span[0].addEventListener("click", () => {
+        l--;
+        for (var i of div) {
+          if (l == 0) {
+            i.style.left = "0px";
+          }
+          if (l == 1) {
+            i.style.left = "-740px";
+          }
+          if (l == 2) {
+            i.style.left = "-1480px";
+          }
+          if (l == 3) {
+            i.style.left = "-2220px";
+          }
+          if (l == 4) {
+            i.style.left = "-2960px";
+          }
+          if (l < 0) {
+            l = 0;
+          }
+        }
+      });
+    </script>
   </body>
 </html>
